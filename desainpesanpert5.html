@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 5: Seni Mendengar Aktif - Desain Komunikasi Pembelajaran</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine.js for Interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Konfigurasi Tailwind & Style Tambahan -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'navy': '#0a192f',
+                        'light-navy': '#112240',
+                        'lightest-navy': '#233554',
+                        'slate': '#8892b0',
+                        'light-slate': '#a8b2d1',
+                        'lightest-slate': '#ccd6f6',
+                        'brand': '#64ffda',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #a8b2d1;
+        }
+        .glass-effect {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -12px;
+            width: 200px;
+            height: 1px;
+            margin-left: 20px;
+            background-color: #233554;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="glass-effect sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-lightest-slate">
+                <a href="#">DP<span class="text-brand">KP</span></a>
+            </div>
+            <div>
+                <a href="#materi" class="text-brand hover:underline">Pertemuan 5: Listening Aktif</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section id="materi" class="text-center mb-20">
+            <h1 class="text-sm font-medium text-brand mb-4">DESAIN PESAN & KOMUNIKASI PEMBELAJARAN</h1>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-lightest-slate mb-6">Seni Mendengar Aktif</h2>
+            <p class="max-w-3xl mx-auto text-lg text-slate">
+                Memahami bukan hanya tentang berbicara, tetapi tentang mendengar dengan penuh perhatian. Pertemuan ini akan mengupas tuntas proses, hambatan, dan kebiasaan dalam mendengar untuk menciptakan komunikasi pembelajaran yang efektif.
+            </p>
+        </section>
+
+        <!-- Konteks Komunikasi -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-brand mr-2">I.</span> Konteks Komunikasi</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Intrapersonal -->
+                <div class="glass-effect p-6 rounded-lg transition-transform hover:-translate-y-2">
+                    <h4 class="font-bold text-xl text-lightest-slate mb-2">Komunikasi Intrapersonal</h4>
+                    <p class="text-slate">Dialog dengan diri sendiri. Proses mendengar aktif dimulai dari sini—memahami pikiran, perasaan, dan bias internal kita sebelum berinteraksi dengan orang lain.</p>
+                </div>
+                <!-- Kelompok -->
+                <div class="glass-effect p-6 rounded-lg transition-transform hover:-translate-y-2">
+                    <h4 class="font-bold text-xl text-lightest-slate mb-2">Komunikasi Kelompok</h4>
+                    <p class="text-slate">Interaksi dalam kelompok kecil (diskusi kelas, kerja kelompok). Mendengar aktif menjadi kunci untuk kolaborasi, pemecahan masalah, dan pencapaian tujuan bersama.</p>
+                </div>
+                <!-- Massa -->
+                <div class="glass-effect p-6 rounded-lg transition-transform hover:-translate-y-2">
+                    <h4 class="font-bold text-xl text-lightest-slate mb-2">Komunikasi Massa</h4>
+                    <p class="text-slate">Pesan kepada audiens yang luas (kuliah umum, webinar). Kemampuan mendengar di sini melibatkan pemahaman feedback audiens secara keseluruhan, seperti tren pertanyaan atau atensi.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tahapan Proses Listening -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-brand mr-2">II.</span> 5 Tahapan Proses Mendengar</h3>
+            <div class="max-w-4xl mx-auto">
+                 
+                <div class="relative border-l-2 border-lightest-navy ml-6 space-y-12 py-4">
+                    <!-- Tahap 1: Receiving -->
+                    <div class="relative">
+                        <div class="absolute -left-10 top-1.5 h-6 w-6 rounded-full bg-brand flex items-center justify-center text-navy font-bold">1</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-xl text-lightest-slate">Receiving (Menerima)</h4>
+                            <p class="text-slate mt-2">Tahap awal di mana telinga menangkap gelombang suara (verbal) dan mata menangkap isyarat (non-verbal). Ini adalah proses fisiologis. Tanpa penerimaan, tidak ada proses mendengar.</p>
+                        </div>
+                    </div>
+                    <!-- Tahap 2: Understanding -->
+                    <div class="relative">
+                        <div class="absolute -left-10 top-1.5 h-6 w-6 rounded-full bg-brand flex items-center justify-center text-navy font-bold">2</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-xl text-lightest-slate">Understanding (Memahami)</h4>
+                            <p class="text-slate mt-2">Otak mulai menafsirkan dan memberi makna pada simbol yang diterima. Ini melibatkan menghubungkan informasi baru dengan pengetahuan yang sudah ada. Tahap ini krusial untuk pembelajaran.</p>
+                        </div>
+                    </div>
+                    <!-- Tahap 3: Remembering -->
+                    <div class="relative">
+                        <div class="absolute -left-10 top-1.5 h-6 w-6 rounded-full bg-brand flex items-center justify-center text-navy font-bold">3</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-xl text-lightest-slate">Remembering (Mengingat)</h4>
+                            <p class="text-slate mt-2">Menyimpan informasi yang telah dipahami ke dalam memori untuk dapat diakses kembali di kemudian hari. Teknik seperti mencatat atau membuat ringkasan sangat membantu di tahap ini.</p>
+                        </div>
+                    </div>
+                    <!-- Tahap 4: Evaluating -->
+                    <div class="relative">
+                        <div class="absolute -left-10 top-1.5 h-6 w-6 rounded-full bg-brand flex items-center justify-center text-navy font-bold">4</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-xl text-lightest-slate">Evaluating (Mengevaluasi)</h4>
+                            <p class="text-slate mt-2">Proses berpikir kritis tentang pesan yang diterima. Kita menilai kredibilitas sumber, validitas argumen, dan membedakan fakta dari opini. Ini adalah inti dari pemikiran tingkat tinggi.</p>
+                        </div>
+                    </div>
+                    <!-- Tahap 5: Responding -->
+                    <div class="relative">
+                        <div class="absolute -left-10 top-1.5 h-6 w-6 rounded-full bg-brand flex items-center justify-center text-navy font-bold">5</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-xl text-lightest-slate">Responding (Menanggapi)</h4>
+                            <p class="text-slate mt-2">Memberikan umpan balik (feedback) kepada pembicara, baik secara verbal (bertanya, mengomentari) maupun non-verbal (mengangguk, kontak mata). Respon menunjukkan bahwa kita telah mendengarkan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Hambatan Proses Listening -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-brand mr-2">III.</span> Hambatan dalam Mendengar</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-lightest-slate">Informasi Terlalu Banyak</h4>
+                    <p class="text-slate mt-2 text-sm">Ketika dosen menyampaikan terlalu banyak konsep dalam satu waktu, kapasitas kognitif kita terlampaui, menyebabkan sulit untuk fokus dan memahami.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-lightest-slate">Kepentingan Pribadi</h4>
+                    <p class="text-slate mt-2 text-sm">Pikiran kita disibukkan oleh masalah pribadi (khawatir tentang ujian lain, masalah personal) sehingga sulit memberikan perhatian penuh pada pembicara.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-lightest-slate">Kecepatan Berpikir</h4>
+                    <p class="text-slate mt-2 text-sm">Manusia berpikir jauh lebih cepat daripada berbicara. Celah waktu ini sering kali membuat pikiran kita melayang ke topik lain yang tidak relevan.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-lightest-slate">Gangguan Pihak Luar</h4>
+                    <p class="text-slate mt-2 text-sm">Noise atau gangguan fisik (suara bising dari luar, notifikasi ponsel, teman yang mengajak bicara) yang memecah konsentrasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kebiasaan Buruk Proses Listening -->
+        <section class="mb-20" x-data="{ activeAccordion: '' }">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-brand mr-2">IV.</span> Waspadai 7 Kebiasaan Buruk Ini</h3>
+            <div class="space-y-4 max-w-4xl mx-auto">
+                <!-- Accordion Item 1 -->
+                <div class="glass-effect rounded-lg">
+                    <button @click="activeAccordion = activeAccordion === 'pseudo' ? '' : 'pseudo'" class="w-full flex justify-between items-center p-5 text-left">
+                        <span class="font-semibold text-lg text-lightest-slate">Pseudo-listening (Mendengar Semu)</span>
+                        <svg class="w-5 h-5 text-brand transform transition-transform" :class="{'rotate-180': activeAccordion === 'pseudo'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div x-show="activeAccordion === 'pseudo'" x-collapse class="px-5 pb-5 text-slate">
+                        <p>Berpura-pura mendengarkan dengan memberikan isyarat seperti mengangguk atau tersenyum, padahal pikiran sedang berada di tempat lain. Ini adalah bentuk ketidakhormatan yang halus.</p>
+                    </div>
+                </div>
+                 <!-- Accordion Item 2 -->
+                <div class="glass-effect rounded-lg">
+                    <button @click="activeAccordion = activeAccordion === 'hogging' ? '' : 'hogging'" class="w-full flex justify-between items-center p-5 text-left">
+                        <span class="font-semibold text-lg text-lightest-slate">Stage-hogging (Mendominasi)</span>
+                         <svg class="w-5 h-5 text-brand transform transition-transform" :class="{'rotate-180': activeAccordion === 'hogging'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div x-show="activeAccordion === 'hogging'" x-collapse class="px-5 pb-5 text-slate">
+                        <p>Selalu berusaha mengalihkan pembicaraan kembali ke diri sendiri. Mereka tidak benar-benar mendengarkan, hanya menunggu giliran untuk berbicara tentang pengalamannya.</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 3 -->
+                <div class="glass-effect rounded-lg">
+                    <button @click="activeAccordion = activeAccordion === 'selective' ? '' : 'selective'" class="w-full flex justify-between items-center p-5 text-left">
+                        <span class="font-semibold text-lg text-lightest-slate">Selective Listening (Mendengar Selektif)</span>
+                         <svg class="w-5 h-5 text-brand transform transition-transform" :class="{'rotate-180': activeAccordion === 'selective'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div x-show="activeAccordion === 'selective'" x-collapse class="px-5 pb-5 text-slate">
+                        <p>Hanya memperhatikan bagian dari pesan yang menarik minat atau relevan dengan dirinya, dan mengabaikan bagian lainnya. Akibatnya, pemahaman menjadi tidak utuh.</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 4 -->
+                <div class="glass-effect rounded-lg">
+                    <button @click="activeAccordion = activeAccordion === 'gaps' ? '' : 'gaps'" class="w-full flex justify-between items-center p-5 text-left">
+                        <span class="font-semibold text-lg text-lightest-slate">Filling in Gaps (Mengisi Celah)</span>
+                         <svg class="w-5 h-5 text-brand transform transition-transform" :class="{'rotate-180': activeAccordion === 'gaps'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div x-show="activeAccordion === 'gaps'" x-collapse class="px-5 pb-5 text-slate">
+                        <p>Merasa sudah tahu apa yang akan dikatakan pembicara, lalu menyimpulkan sendiri sisanya. Ini sering kali menyebabkan misinformasi karena asumsi yang salah.</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 5 -->
+                <div class="glass-effect rounded-lg">
+                    <button @click="activeAccordion = activeAccordion === 'insulated' ? '' : 'insulated'" class="w-full flex justify-between items-center p-5 text-left">
+                        <span class="font-semibold text-lg text-lightest-slate">Insulated Listening (Menghindar)</span>
+                         <svg class="w-5 h-5 text-brand transform transition-transform" :class="{'rotate-180': activeAccordion === 'insulated'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div x-show="activeAccordion === 'insulated'" x-collapse class="px-5 pb-5 text-slate">
+                        <p>Secara aktif menghindari atau mengabaikan topik-topik tertentu yang tidak ingin mereka dengar, misalnya feedback negatif atau materi yang dianggap sulit.</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 6 -->
+                <div class="glass-effect rounded-lg">
+                    <button @click="activeAccordion = activeAccordion === 'defensive' ? '' : 'defensive'" class="w-full flex justify-between items-center p-5 text-left">
+                        <span class="font-semibold text-lg text-lightest-slate">Defensive Listening (Mendengar Defensif)</span>
+                         <svg class="w-5 h-5 text-brand transform transition-transform" :class="{'rotate-180': activeAccordion === 'defensive'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div x-show="activeAccordion === 'defensive'" x-collapse class="px-5 pb-5 text-slate">
+                        <p>Menganggap setiap komentar sebagai serangan pribadi. Mereka sibuk menyiapkan pembelaan diri daripada mencoba memahami maksud sebenarnya dari pembicara.</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 7 -->
+                <div class="glass-effect rounded-lg">
+                    <button @click="activeAccordion = activeAccordion === 'ambushing' ? '' : 'ambushing'" class="w-full flex justify-between items-center p-5 text-left">
+                        <span class="font-semibold text-lg text-lightest-slate">Ambushing (Menyergap)</span>
+                         <svg class="w-5 h-5 text-brand transform transition-transform" :class="{'rotate-180': activeAccordion === 'ambushing'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div x-show="activeAccordion === 'ambushing'" x-collapse class="px-5 pb-5 text-slate">
+                        <p>Mendengarkan dengan sangat teliti, tetapi tujuannya adalah untuk mengumpulkan informasi yang bisa digunakan untuk menyerang balik atau mendebat pembicara di kemudian hari.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus Interaktif -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-brand mr-2">V.</span> Studi Kasus Kelompok</h3>
+            <p class="max-w-3xl mx-auto text-lg text-slate text-center mb-12">
+                Diskusikan dalam kelompok Anda. Analisis skenario di bawah ini menggunakan konsep tahapan, hambatan, dan kebiasaan buruk dalam mendengar yang telah dipelajari.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kasus 1 -->
+                <div class="glass-effect p-6 rounded-lg flex flex-col h-full">
+                    <h4 class="font-bold text-xl text-lightest-slate mb-2">Kasus 1: Mahasiswa & Materi Sulit</h4>
+                    <p class="text-slate flex-grow">Rian merasa materi Kalkulus sangat sulit. Selama kelas, ia sering mengangguk seolah paham, namun pikirannya melayang memikirkan tugas lain. Ketika dosen membahas topik turunan, yang ia benci, ia langsung membuka laptop dan mengerjakan hal lain. Akibatnya, ia sama sekali tidak mengerti saat kuis.</p>
+                    <div class="mt-4 pt-4 border-t border-lightest-navy">
+                        <h5 class="font-semibold text-light-slate">Tugas Diskusi:</h5>
+                        <ul class="list-disc list-inside text-slate text-sm mt-2">
+                            <li>Kebiasaan mendengar buruk apa yang ditunjukkan Rian?</li>
+                            <li>Pada tahap proses mendengar mana Rian mengalami kegagalan?</li>
+                            <li>Apa saran Anda untuk Rian dan dosennya?</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Kasus 2 -->
+                <div class="glass-effect p-6 rounded-lg flex flex-col h-full">
+                    <h4 class="font-bold text-xl text-lightest-slate mb-2">Kasus 2: Diskusi Kelompok Buntu</h4>
+                    <p class="text-slate flex-grow">Kelompok Budi sedang berdiskusi. Setiap kali anggota lain memberi ide, Budi langsung memotong, "Oh, itu mengingatkanku pada pengalamanku..." dan mulai bercerita panjang. Di sisi lain, Sarah diam-diam mencatat setiap kesalahan kecil dalam argumen teman-temannya, bersiap untuk menyanggahnya di akhir sesi.</p>
+                     <div class="mt-4 pt-4 border-t border-lightest-navy">
+                        <h5 class="font-semibold text-light-slate">Tugas Diskusi:</h5>
+                        <ul class="list-disc list-inside text-slate text-sm mt-2">
+                            <li>Identifikasi kebiasaan mendengar dari Budi dan Sarah.</li>
+                            <li>Bagaimana perilaku mereka menghambat tujuan kelompok?</li>
+                            <li>Apa yang bisa dilakukan moderator untuk mengatasi ini?</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Kasus 3 -->
+                <div class="glass-effect p-6 rounded-lg flex flex-col h-full">
+                    <h4 class="font-bold text-xl text-lightest-slate mb-2">Kasus 3: Presentasi & Asumsi</h4>
+                    <p class="text-slate flex-grow">Dina sedang presentasi tentang "Keamanan Data". Audiensnya adalah mahasiswa non-IT. Ia menyebut istilah "enkripsi". Sebagian audiens yang pernah mendengar kata itu langsung berasumsi Dina akan membahas hal teknis yang rumit dan berhenti memperhatikan. Sebagian lain hanya fokus saat Dina menyebut kata "media sosial".</p>
+                    <div class="mt-4 pt-4 border-t border-lightest-navy">
+                        <h5 class="font-semibold text-light-slate">Tugas Diskusi:</h5>
+                        <ul class="list-disc list-inside text-slate text-sm mt-2">
+                            <li>Hambatan dan kebiasaan mendengar apa yang terjadi pada audiens?</li>
+                            <li>Bagaimana Dina bisa mengantisipasi hal ini dalam desain pesannya?</li>
+                            <li>Apa peran "evaluating" dan "responding" dari audiens di sini?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-navy mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate">
+            <p>&copy; 2025 [Nama Dosen] - Program Studi Teknologi Pendidikan</p>
+            <p class="text-sm">Universitas [Nama Universitas Anda]</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
