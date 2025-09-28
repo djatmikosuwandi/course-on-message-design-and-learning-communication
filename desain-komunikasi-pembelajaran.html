@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Desain Pesan & Komunikasi Pembelajaran | UNESA</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Konfigurasi Tailwind & Style Tambahan -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'unesa-blue': '#003c71',
+                        'unesa-yellow': '#fdb913',
+                        'navy': '#0a192f',
+                        'light-navy': '#112240',
+                        'lightest-navy': '#233554',
+                        'slate': '#8892b0',
+                        'light-slate': '#a8b2d1',
+                        'lightest-slate': '#ccd6f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #a8b2d1;
+        }
+        .glass-effect {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -12px;
+            width: 200px;
+            height: 1px;
+            margin-left: 20px;
+            background-color: #233554;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="glass-effect sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/c/c2/State_University_of_Surabaya_logo.png/799px-State_University_of_Surabaya_logo.png" alt="Logo UNESA" class="h-10">
+                <div>
+                    <h1 class="text-xl font-bold text-lightest-slate">DP<span class="text-unesa-yellow">KP</span></h1>
+                    <p class="text-xs text-slate">Universitas Negeri Surabaya</p>
+                </div>
+            </div>
+            <div>
+                <a href="#silabus" class="text-unesa-yellow hover:underline text-sm">Rencana Pertemuan</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-20">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-lightest-slate mb-4">Desain Pesan & Komunikasi Pembelajaran</h2>
+            <p class="max-w-3xl mx-auto text-lg text-slate">
+                Selamat datang di mata kuliah yang akan mengubah cara Anda merancang, menyampaikan, dan mengevaluasi pesan dalam konteks pembelajaran untuk menciptakan pengalaman belajar yang efektif dan bermakna.
+            </p>
+        </section>
+
+        <!-- Capaian Pembelajaran -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-2">I.</span> Capaian Pembelajaran</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- CPL -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-2xl text-lightest-slate mb-4">CPL (Capaian Pembelajaran Lulusan)</h4>
+                    <p class="text-slate mb-4">Mata kuliah ini mendukung pencapaian CPL program studi, terutama dalam hal:</p>
+                    <ul class="list-disc list-inside text-light-slate space-y-2">
+                        <li>Kemampuan merancang solusi pembelajaran yang inovatif dan efektif dengan menerapkan prinsip-prinsip desain instruksional.</li>
+                        <li>Kemampuan berkomunikasi secara efektif baik lisan maupun tulisan untuk keperluan akademik dan profesional di bidang teknologi pendidikan.</li>
+                        <li>Kemampuan memanfaatkan teknologi digital untuk mengembangkan dan mendiseminasikan sumber daya pembelajaran.</li>
+                    </ul>
+                </div>
+                <!-- CPMK -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-2xl text-lightest-slate mb-4">CPMK (Capaian Pembelajaran Mata Kuliah)</h4>
+                    <p class="text-slate mb-4">Setelah menyelesaikan mata kuliah ini, mahasiswa diharapkan mampu:</p>
+                    <ul class="list-disc list-inside text-light-slate space-y-2">
+                        <li>Menganalisis model, prinsip, dan komponen komunikasi dalam konteks pembelajaran.</li>
+                        <li>Merancang pesan pembelajaran (verbal, non-verbal, visual, audio) yang sesuai dengan karakteristik peserta didik dan tujuan pembelajaran.</li>
+                        <li>Menerapkan keterampilan komunikasi interpersonal, termasuk mendengar aktif, dalam fasilitasi pembelajaran.</li>
+                        <li>Mengevaluasi efektivitas pesan dan strategi komunikasi yang telah dirancang.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Silabus Pertemuan -->
+        <section id="silabus" class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-2">II.</span> Rencana 16 Pertemuan</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Generate 16 cards -->
+                <a href="pertemuan-1.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 1</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Kontrak Kuliah & Pengantar</h5>
+                    <p class="text-slate text-sm mt-2">Orientasi mata kuliah dan pengenalan konsep dasar desain pesan dalam teknologi pendidikan.</p>
+                </a>
+                <a href="pertemuan-2.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 2</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Model & Komponen Komunikasi</h5>
+                    <p class="text-slate text-sm mt-2">Menganalisis berbagai model (linear, transaksional) dan komponen-komponen utama komunikasi.</p>
+                </a>
+                <a href="pertemuan-3.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 3</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Prinsip-Prinsip Komunikasi</h5>
+                    <p class="text-slate text-sm mt-2">Mendalami prinsip-prinsip fundamental yang mengatur efektivitas komunikasi pembelajaran.</p>
+                </a>
+                <a href="pertemuan-4.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 4</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Komunikasi Verbal & Non-Verbal</h5>
+                    <p class="text-slate text-sm mt-2">Menerapkan kekuatan kata-kata dan bahasa tubuh dalam menyampaikan pesan.</p>
+                </a>
+                <a href="pertemuan-5.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 5</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Seni Mendengar Aktif</h5>
+                    <p class="text-slate text-sm mt-2">Menguasai tahapan, mengatasi hambatan, dan menghindari kebiasaan buruk dalam mendengar.</p>
+                </a>
+                <a href="pertemuan-6.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 6</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Persepsi & Pesan Pembelajaran</h5>
+                    <p class="text-slate text-sm mt-2">Memahami bagaimana persepsi individu memengaruhi interpretasi pesan.</p>
+                </a>
+                <a href="pertemuan-7.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 7</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Desain Pesan Visual</h5>
+                    <p class="text-slate text-sm mt-2">Menerapkan prinsip dan elemen desain grafis untuk media pembelajaran yang menarik.</p>
+                </a>
+                <a href="pertemuan-8.html" class="glass-effect p-5 rounded-lg bg-lightest-navy border-unesa-yellow block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 8</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Ujian Tengah Semester (UTS)</h5>
+                    <p class="text-slate text-sm mt-2">Evaluasi pemahaman materi pertemuan 1-7.</p>
+                </a>
+                <a href="pertemuan-9.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 9</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Desain Pesan Auditif</h5>
+                    <p class="text-slate text-sm mt-2">Memanfaatkan suara, musik, dan narasi untuk memperkuat pesan pembelajaran.</p>
+                </a>
+                <a href="pertemuan-10.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 10</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Desain Pesan Berbasis Teks</h5>
+                    <p class="text-slate text-sm mt-2">Strategi menulis dan tipografi untuk keterbacaan dan pemahaman maksimal.</p>
+                </a>
+                <a href="pertemuan-11.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 11</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Komunikasi Persuasif</h5>
+                    <p class="text-slate text-sm mt-2">Teknik merancang pesan yang dapat mengubah sikap dan perilaku belajar.</p>
+                </a>
+                <a href="pertemuan-12.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 12</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Pemilihan Media Pembelajaran</h5>
+                    <p class="text-slate text-sm mt-2">Menentukan media yang paling tepat untuk menyampaikan pesan tertentu.</p>
+                </a>
+                <a href="pertemuan-13.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 13</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Komunikasi Kelompok & Kolaborasi</h5>
+                    <p class="text-slate text-sm mt-2">Menerapkan strategi komunikasi untuk pembelajaran kolaboratif yang efektif.</p>
+                </a>
+                 <a href="pertemuan-14.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 14</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Pesan di Lingkungan Daring</h5>
+                    <p class="text-slate text-sm mt-2">Adaptasi desain pesan dan komunikasi untuk platform e-learning dan webinar.</p>
+                </a>
+                <a href="pertemuan-15.html" class="glass-effect p-5 rounded-lg transition-transform hover:-translate-y-2 block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 15</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Evaluasi Efektivitas Pesan</h5>
+                    <p class="text-slate text-sm mt-2">Metode untuk mengukur apakah pesan pembelajaran berhasil mencapai tujuannya.</p>
+                </a>
+                <a href="pertemuan-16.html" class="glass-effect p-5 rounded-lg bg-lightest-navy border-unesa-yellow block h-full">
+                    <p class="text-sm font-bold text-unesa-yellow">Pertemuan 16</p>
+                    <h5 class="font-bold text-lg text-lightest-slate mt-1">Ujian Akhir Semester (UAS)</h5>
+                    <p class="text-slate text-sm mt-2">Evaluasi komprehensif seluruh materi perkuliahan.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Informasi Dosen -->
+        <section>
+             <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-2">III.</span> Dosen Pengampu</h3>
+             <div class="glass-effect p-8 rounded-lg max-w-2xl mx-auto text-center">
+                <img src="https://placehold.co/128x128/fdb913/0a192f?text=Foto" alt="Foto Dosen" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-lightest-navy">
+                <h4 class="text-2xl font-bold text-lightest-slate">[Nama Dosen Pengampu]</h4>
+                <p class="text-unesa-yellow">Departemen Teknologi Pendidikan</p>
+                <p class="text-slate mt-4 max-w-md mx-auto">"Komunikasi adalah keterampilan yang Anda bisa pelajari. Ini seperti belajar mengetik atau naik sepeda. Jika Anda bersedia untuk mempelajarinya, Anda dapat dengan cepat meningkatkan kualitas setiap bagian dari hidup Anda." - Brian Tracy</p>
+                <div class="mt-6">
+                    <a href="mailto:emaildosen@unesa.ac.id" class="text-unesa-yellow hover:underline">emaildosen@unesa.ac.id</a>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-navy mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate">
+            <p>&copy; 2025 Departemen Teknologi Pendidikan - Fakultas Ilmu Pendidikan</p>
+            <p class="text-sm">Universitas Negeri Surabaya</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+

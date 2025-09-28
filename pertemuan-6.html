@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 6: Hambatan & Evasi Komunikasi - DPKP | UNESA</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Konfigurasi Tailwind & Style Tambahan -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'unesa-blue': '#003c71',
+                        'unesa-yellow': '#fdb913',
+                        'navy': '#0a192f',
+                        'light-navy': '#112240',
+                        'lightest-navy': '#233554',
+                        'slate': '#8892b0',
+                        'light-slate': '#a8b2d1',
+                        'lightest-slate': '#ccd6f6',
+                        'mint-green': '#64ffda',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #a8b2d1;
+        }
+        .glass-effect {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -12px;
+            width: 200px;
+            height: 1px;
+            margin-left: 20px;
+            background-color: #233554;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="glass-effect sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/c/c2/State_University_of_Surabaya_logo.png/799px-State_University_of_Surabaya_logo.png" alt="Logo UNESA" class="h-10">
+                <div>
+                    <h1 class="text-xl font-bold text-lightest-slate">DP<span class="text-unesa-yellow">KP</span></h1>
+                    <p class="text-xs text-slate">Universitas Negeri Surabaya</p>
+                </div>
+            </div>
+            <div>
+                <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">← Kembali ke Homepage</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Judul Pertemuan -->
+        <section class="mb-16">
+            <p class="text-unesa-yellow font-semibold mb-2">Pertemuan 6</p>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-lightest-slate">Menganalisis Hambatan dan Taktik Evasi Komunikasi</h2>
+        </section>
+
+        <!-- Tujuan Pembelajaran -->
+        <section class="mb-12 glass-effect p-8 rounded-lg">
+             <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-4"><span class="text-unesa-yellow mr-3">🎯</span> Tujuan Pembelajaran</h3>
+             <p class="text-light-slate">Setelah mengikuti sesi ini, Anda diharapkan mampu:</p>
+             <ul class="list-disc list-inside text-light-slate space-y-2 mt-4">
+                <li>Menganalisis berbagai hambatan komunikasi, khususnya yang bersifat psikis.</li>
+                <li>Mengidentifikasi taktik evasi (menghindar) yang dapat merusak proses komunikasi dalam konteks pembelajaran.</li>
+             </ul>
+        </section>
+
+        <!-- Apersepsi -->
+        <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-4 section-title"><span class="text-unesa-yellow mr-2">🔗</span> Apersepsi: Setelah Mendengar, Apa Lagi?</h3>
+            <div class="bg-light-navy p-6 rounded-lg">
+                <p class="text-slate">Pada pertemuan ke-5, kita telah mengasah Seni Mendengar Aktif. Kita belajar bagaimana menerima pesan secara utuh. Namun, menjadi pendengar yang hebat saja terkadang tidak cukup. Seringkali, pesan yang kita kirim atau terima terdistorsi, ditolak, atau bahkan dihindari sama sekali.</p>
+                <p class="text-light-slate mt-3">Hari ini, kita akan menjadi seorang "detektif komunikasi". Kita akan menyelidiki mengapa komunikasi bisa gagal meskipun niatnya baik. Kita akan membongkar hambatan-hambatan tak terlihat yang ada di dalam pikiran kita dan mempelajari taktik-taktik licik (evasi) yang sering digunakan orang untuk menghindar dari komunikasi yang sebenarnya.</p>
+            </div>
+        </section>
+        
+        <!-- 1. Tujuan & Hambatan Komunikasi -->
+        <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-2">1.</span> Memahami Tujuan dan Definisi Hambatan</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-mint-green mb-2">Tujuan Komunikasi Efektif</h4>
+                    <p class="text-slate text-sm">Tujuan utama komunikasi adalah tercapainya pemahaman bersama (*shared meaning*). Pesan yang dikirim oleh komunikator harus dapat diterima dan dimaknai sama oleh komunikan, sehingga dapat menghasilkan feedback atau perubahan perilaku yang diharapkan.</p>
+                </div>
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-mint-green mb-2">Apa itu Hambatan Komunikasi?</h4>
+                    <p class="text-slate text-sm">Hambatan komunikasi adalah segala sesuatu yang menghalangi atau mendistorsi jalannya proses komunikasi, sehingga pesan tidak dapat diterima secara efektif. Hambatan bisa bersifat fisik (lingkungan), namun yang paling sering tidak disadari adalah hambatan psikis (internal).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Faktor-Faktor Hambatan Psikis -->
+        <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-2">2.</span> Dinding Tak Terlihat: 4 Faktor Hambatan Psikis</h3>
+             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-light-navy p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-light-slate mb-2">Stereotip</h4>
+                    <p class="text-slate text-sm">Memberi label atau menggeneralisasi sekelompok orang. Contoh: "Mahasiswa generasi Z pasti malas membaca." Stereotip ini membuat kita berhenti mendengar individu dan hanya mendengar labelnya.</p>
+                </div>
+                 <div class="bg-light-navy p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-light-slate mb-2">Kepentingan (Interest)</h4>
+                    <p class="text-slate text-sm">Kita cenderung hanya memperhatikan pesan yang sesuai dengan kepentingan, kebutuhan, atau keuntungan pribadi kita, dan mengabaikan yang lain (mirip *selective listening*).</p>
+                </div>
+                <div class="bg-light-navy p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-light-slate mb-2">Motivasi</h4>
+                    <p class="text-slate text-sm">Tingkat motivasi dan emosi seseorang sangat memengaruhi cara ia menerima pesan. Mahasiswa yang tidak termotivasi akan sulit menerima materi seberapapun menariknya.</p>
+                </div>
+                 <div class="bg-light-navy p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-light-slate mb-2">Sifat (Traits)</h4>
+                    <p class="text-slate text-sm">Sifat personal seperti prasangka (prejudice), egosentrisme, atau sifat tertutup dapat menjadi dinding tebal yang menghalangi pesan masuk secara objektif.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Evasi Komunikasi -->
+        <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-2">3.</span> Evasi: Seni Menghindar dari Komunikasi</h3>
+            <p class="mb-6 text-slate">Evasi komunikasi adalah taktik di mana seseorang secara sengaja membuat pesannya ambigu, tidak relevan, atau mengalihkan topik untuk menghindar dari menjawab atau membahas sesuatu secara langsung. Ini adalah bentuk pertahanan diri yang merusak kejujuran komunikasi.</p>
+            <div class="space-y-6">
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-mint-green mb-2">1. Understanding Derailed (Pemahaman Digagalkan)</h4>
+                    <p class="text-slate text-sm">Taktik untuk menggagalkan pemahaman dengan sengaja memberikan jawaban yang tidak jelas, berputar-putar, atau menggunakan jargon yang rumit agar orang lain bingung dan berhenti bertanya. <br><strong class="text-light-slate">Contoh:</strong> Dosen bertanya, "Kenapa tugasmu terlambat?" Mahasiswa menjawab, "Begini Pak, kemarin itu ada konstelasi dinamika prioritas yang butuh penyesuaian strategis secara holistik."</p>
+                </div>
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-mint-green mb-2">2. Pesan Dibuat Tidak Valid (Message Invalidation)</h4>
+                    <p class="text-slate text-sm">Menyerang atau meremehkan pesan orang lain agar tidak perlu membahas isinya. Tujuannya adalah membuat pesan lawan bicara tampak tidak penting atau tidak layak didiskusikan. <br><strong class="text-light-slate">Contoh:</strong> Mahasiswa memberi kritik, "Pak, metode mengajarnya monoton." Dosen menjawab, "Kamu kan masih mahasiswa, belum tahu apa-apa soal pedagogi."</p>
+                </div>
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-mint-green mb-2">3. Changing Frame of Reference (Mengubah Kerangka Acuan)</h4>
+                    <p class="text-slate text-sm">Mengalihkan pembicaraan dari topik spesifik ke isu yang lebih besar, abstrak, atau sama sekali berbeda untuk menghindari tanggung jawab. <br><strong class="text-light-slate">Contoh:</strong> Dosen bertanya, "Kenapa kamu mencontek saat ujian?" Mahasiswa menjawab, "Bukankah sistem pendidikan kita secara keseluruhan yang memaksa mahasiswa untuk fokus pada nilai, bukan proses belajar?"</p>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Studi Kasus -->
+        <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-2">4.</span> Studi Kasus Kelompok</h3>
+            <div class="space-y-6">
+                <!-- Kelompok 1 -->
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-mint-green mb-2">Kasus 1: Dosen "Killer"</h4>
+                    <p class="text-slate text-sm">Pak Budi dikenal sebagai dosen "killer". Saat seorang mahasiswa mencoba memberikan saran tentang metode pengajarannya agar lebih interaktif, Pak Budi menjawab, "Zaman saya dulu kuliah, mahasiswa tidak pernah mengeluh, mereka belajar mandiri. Kalian generasi sekarang maunya disuapi terus."</p>
+                    <p class="text-mint-green text-sm italic mt-4">Hambatan psikis apa yang paling menonjol dari Pak Budi? Taktik evasi apa yang ia gunakan untuk menolak saran tersebut?</p>
+                </div>
+                <!-- Kelompok 2 -->
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-mint-green mb-2">Kasus 2: Presentasi Kelompok</h4>
+                    <p class="text-slate text-sm">Kelompok A sedang presentasi. Setelah selesai, dosen bertanya kepada anggota kelompok bernama Doni, "Doni, bisa tolong jelaskan lebih detail bagian kontribusimu dalam proyek ini?" Doni, yang sebenarnya tidak banyak berkontribusi, menjawab, "Kerja sama tim adalah kunci, Bu. Kami percaya bahwa keberhasilan proyek ini adalah hasil sinergi kolektif, bukan pencapaian individu."</p>
+                    <p class="text-mint-green text-sm italic mt-4">Taktik evasi mana yang digunakan Doni? Mengapa ia melakukannya?</p>
+                </div>
+                <!-- Kelompok 3 -->
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-mint-green mb-2">Kasus 3: Rapat Organisasi Mahasiswa</h4>
+                    <p class="text-slate text-sm">Dalam rapat, bendahara melaporkan ada pengeluaran tak terduga yang cukup besar. Ketika ketua HIMA bertanya, "Dana ini digunakan untuk apa dan kenapa tidak ada laporan sebelumnya?", bendahara tersebut menjawab, "Ini masalah validitas data sekunder dalam pembukuan kita. Perlu ada audit komprehensif terhadap paradigma akuntansi yang kita anut."</p>
+                    <p class="text-mint-green text-sm italic mt-4">Taktik evasi apa ini? Apa tujuan bendahara menggunakan jawaban serumit itu?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refleksi -->
+         <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-4 section-title"><span class="text-unesa-yellow mr-2">✨</span> Refleksi Akhir</h3>
+            <div class="bg-light-navy p-6 rounded-lg text-center">
+                <p class="text-light-slate italic">"The single biggest problem in communication is the illusion that it has taken place."</p>
+                <p class="text-slate mt-2">- George Bernard Shaw</p>
+                <p class="text-light-slate mt-4 italic">Setelah mempelajari materi hari ini, coba refleksikan: Hambatan psikis (stereotip, kepentingan, dll) apa yang paling sering Anda alami atau lakukan saat berkomunikasi? Pernahkah Anda menggunakan atau menjadi korban taktik evasi? Bagaimana kesadaran ini dapat mengubah cara Anda berkomunikasi ke depannya?</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-navy mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate">
+            <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">Kembali ke Homepage</a>
+            <p class="mt-4">&copy; 2025 Departemen Teknologi Pendidikan - Fakultas Ilmu Pendidikan</p>
+            <p class="text-sm">Universitas Negeri Surabaya</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
