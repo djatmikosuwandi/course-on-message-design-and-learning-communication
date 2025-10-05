@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 7: Persepsi, Memori, Kognisi & Perilaku - DPKP | UNESA</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Konfigurasi Tailwind & Style Tambahan -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'unesa-blue': '#003c71',
+                        'unesa-yellow': '#fdb913',
+                        'navy': '#0a192f',
+                        'light-navy': '#112240',
+                        'lightest-navy': '#233554',
+                        'slate': '#8892b0',
+                        'light-slate': '#a8b2d1',
+                        'lightest-slate': '#ccd6f6',
+                        'mint-green': '#64ffda',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #a8b2d1;
+        }
+        .glass-effect {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glass-effect:hover {
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            transform: translateY(-5px);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -15px; /* Disesuaikan agar lebih pas */
+            width: 300px;
+            height: 1px;
+            margin-left: 24px; /* Disesuaikan dengan padding ikon */
+            background-color: #233554;
+        }
+        .flow-arrow {
+            color: #fdb913;
+            flex-shrink: 0;
+        }
+        /* Mencegah hover effect pada elemen non-interaktif */
+        .static-glass {
+             background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="static-glass sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/c/c2/State_University_of_Surabaya_logo.png/799px-State_University_of_Surabaya_logo.png" alt="Logo UNESA" class="h-10">
+                <div>
+                    <h1 class="text-xl font-bold text-lightest-slate">DP<span class="text-unesa-yellow">KP</span></h1>
+                    <p class="text-xs text-slate">Universitas Negeri Surabaya</p>
+                </div>
+            </div>
+            <div>
+                <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">← Kembali ke Homepage</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Judul Pertemuan -->
+        <section class="mb-20 text-center">
+            <p class="text-unesa-yellow font-semibold mb-3">Pertemuan 7</p>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-lightest-slate max-w-4xl mx-auto">Membongkar Mesin Pikiran: Persepsi, Memori, Kognisi, & Perilaku</h2>
+        </section>
+
+        <!-- Tujuan Pembelajaran -->
+        <section class="mb-16 static-glass p-8 rounded-lg border-l-4 border-unesa-yellow">
+             <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-4"><span class="text-unesa-yellow mr-3">🎯</span> Tujuan Pembelajaran</h3>
+             <p class="text-light-slate">Setelah mengikuti sesi ini, Anda diharapkan mampu menganalisis dan menerapkan prinsip-prinsip psikologis fundamental dalam merancang sebuah pesan pembelajaran yang efektif.</p>
+             <ul class="list-disc list-inside text-light-slate space-y-2 mt-4">
+                <li>Menganalisis bagaimana prinsip persepsi memengaruhi cara pesan diterima.</li>
+                <li>Menerapkan prinsip memori untuk meningkatkan retensi informasi.</li>
+                <li>Menggunakan prinsip kognisi untuk memfasilitasi pemahaman konsep.</li>
+                <li>Menganalisis faktor-faktor perubahan perilaku sebagai tujuan akhir pembelajaran.</li>
+             </ul>
+        </section>
+
+        <!-- Apersepsi -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-3 text-3xl">🔗</span> Apersepsi</h3>
+            <div class="bg-light-navy p-8 rounded-lg">
+                <p class="text-slate text-lg">Pada pertemuan ke-6, kita telah menjadi "detektif komunikasi" yang mengidentifikasi berbagai hambatan. Kita belajar bahwa banyak kegagalan komunikasi berasal dari faktor psikis.</p>
+                <p class="text-light-slate mt-4 text-lg">Hari ini, kita akan masuk lebih dalam ke **"ruang mesin" pikiran manusia**. Kita akan bedah bagaimana otak kita sebenarnya bekerja saat menerima pesan. Bagaimana sebuah gambar diubah menjadi makna? Bagaimana informasi disimpan? Dan yang terpenting, bagaimana kita bisa merancang pesan yang selaras dengan cara kerja otak untuk menciptakan pembelajaran yang transformatif?</p>
+            </div>
+        </section>
+        
+        <!-- 1. Prinsip Persepsi -->
+        <section id="persepsi" class="mb-20">
+            <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">I.</span> Prinsip Persepsi: Pintu Gerbang Informasi</h3>
+            <div class="static-glass p-8 rounded-lg mb-10">
+                <h4 class="font-bold text-xl text-mint-green mb-2">Definisi Persepsi</h4>
+                <p class="text-slate">Menurut Kotler, persepsi adalah "proses bagaimana kita memilih, mengatur, dan menafsirkan masukan informasi untuk menciptakan gambaran dunia yang berarti." Ini adalah langkah pertama agar pesan kita bisa masuk dan diproses.</p>
+            </div>
+
+            <div class="mb-12">
+                <h4 class="font-bold text-xl text-center text-light-slate mb-6">Alur Proses Persepsi dalam Komunikasi</h4>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="bg-light-navy p-4 rounded text-center w-full md:w-52 h-24 flex flex-col justify-center"><b>1. Stimulus</b><p class="text-xs text-slate">Pesan (visual/audio) hadir</p></div>
+                    <svg class="w-8 h-8 flow-arrow transform md:rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="bg-light-navy p-4 rounded text-center w-full md:w-52 h-24 flex flex-col justify-center"><b>2. Registrasi</b><p class="text-xs text-slate">Indra (mata/telinga) menangkap</p></div>
+                    <svg class="w-8 h-8 flow-arrow transform md:rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="bg-light-navy p-4 rounded text-center w-full md:w-52 h-24 flex flex-col justify-center"><b>3. Interpretasi</b><p class="text-xs text-slate">Otak memberi makna</p></div>
+                     <svg class="w-8 h-8 flow-arrow transform md:rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="bg-light-navy p-4 rounded text-center w-full md:w-52 h-24 flex flex-col justify-center"><b>4. Feedback</b><p class="text-xs text-slate">Reaksi (mengerti/bingung)</p></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-light-slate mb-4">Tahapan Internal Persepsi</h4>
+                     <ul class="list-disc list-inside text-slate space-y-2">
+                        <li><b>Selection:</b> Kita hanya memperhatikan sebagian kecil stimulus.</li>
+                        <li><b>Organization:</b> Otak mengelompokkan informasi (prinsip Gestalt).</li>
+                        <li><b>Interpretation:</b> Kita memberi makna berdasarkan pengalaman.</li>
+                    </ul>
+                </div>
+                 <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-lg text-mint-green text-center mb-2">Sensation vs. Perception</h4>
+                    <p class="text-slate text-sm text-center"><b>Sensation</b> adalah data mentah yang ditangkap indra (cahaya, suara). <b>Perception</b> adalah proses otak memberi makna pada data tersebut.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-xl text-center text-light-slate mb-6">Faktor yang Mempengaruhi Persepsi</h4>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-light-navy p-6 rounded-lg">
+                        <h5 class="font-semibold text-lightest-slate text-center">Faktor Internal (Dari Diri Pembelajar)</h5>
+                        <ul class="list-disc list-inside text-sm text-slate mt-4 space-y-2">
+                            <li>Fisiologis (Kondisi Indra)</li>
+                            <li>Perhatian & Minat</li>
+                            <li>Pengalaman & Pengetahuan</li>
+                            <li>Mood & Emosi</li>
+                        </ul>
+                    </div>
+                    <div class="bg-light-navy p-6 rounded-lg">
+                        <h5 class="font-semibold text-lightest-slate text-center">Faktor Eksternal (Dari Desain Pesan)</h5>
+                         <ul class="list-disc list-inside text-sm text-slate mt-4 space-y-2">
+                            <li>Intensitas & Ukuran</li>
+                            <li>Kontras & Perbedaan</li>
+                            <li>Pengulangan (Repetition)</li>
+                            <li>Sesuatu yang Baru (Novelty)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Prinsip Memori -->
+        <section id="memori" class="mb-20">
+            <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">II.</span> Prinsip Memori: Mengunci Informasi</h3>
+             <div class="static-glass p-8 rounded-lg mb-10">
+                <h4 class="font-bold text-xl text-mint-green mb-2">Definisi Memori</h4>
+                <p class="text-slate">Menurut Robert S. Feldman, memori adalah "proses di mana kita menyandikan (encoding), menyimpan (storage), dan mengambil kembali (retrieval) informasi."</p>
+            </div>
+            <div class="mb-12">
+                <h4 class="font-bold text-xl text-center text-light-slate mb-6">Alur Proses Terbentuknya Memori</h4>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="bg-light-navy p-4 rounded text-center w-full md:w-52 h-24 flex flex-col justify-center"><b>1. Encoding</b><p class="text-xs text-slate">Mengubah info jadi kode</p></div>
+                    <svg class="w-8 h-8 flow-arrow transform md:rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="bg-light-navy p-4 rounded text-center w-full md:w-52 h-24 flex flex-col justify-center"><b>2. Storage</b><p class="text-xs text-slate">Menyimpan kode di otak</p></div>
+                    <svg class="w-8 h-8 flow-arrow transform md:rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="bg-light-navy p-4 rounded text-center w-full md:w-52 h-24 flex flex-col justify-center"><b>3. Retrieval</b><p class="text-xs text-slate">Mengambil info saat dibutuhkan</p></div>
+                </div>
+            </div>
+            <div class="glass-effect p-8 rounded-lg">
+                 <h4 class="font-bold text-xl text-light-slate mb-6">Strategi Desain Pesan untuk Memori</h4>
+                 <div class="grid md:grid-cols-2 gap-6">
+                     <div>
+                        <b class="text-lightest-slate">Chunking:</b>
+                        <p class="text-slate text-sm mt-1">Memecah informasi kompleks. <br><i class="text-xs text-slate/70">Contoh: Mengajarkan nomor telepon 081-234-567.</i></p>
+                     </div>
+                     <div>
+                        <b class="text-lightest-slate">Repetisi:</b>
+                        <p class="text-slate text-sm mt-1">Mengulang konsep kunci. <br><i class="text-xs text-slate/70">Contoh: Menyebutkan definisi, menampilkannya, lalu mengujinya.</i></p>
+                     </div>
+                     <div>
+                        <b class="text-lightest-slate">Elaborasi:</b>
+                        <p class="text-slate text-sm mt-1">Menghubungkan info baru dengan yang lama. <br><i class="text-xs text-slate/70">Contoh: "Ingat mesin mobil kemarin? Konsep ini mirip, tapi..."</i></p>
+                     </div>
+                     <div>
+                        <b class="text-lightest-slate">Visualisasi:</b>
+                        <p class="text-slate text-sm mt-1">Menggunakan gambar/diagram. <br><i class="text-xs text-slate/70">Contoh: Diagram siklus air jauh lebih efektif daripada paragraf teks.</i></p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+         <!-- 3. Prinsip Kognisi -->
+        <section id="kognisi" class="mb-20">
+            <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">III.</span> Prinsip Kognisi: Membangun Pemahaman</h3>
+             <div class="static-glass p-8 rounded-lg mb-10">
+                <h4 class="font-bold text-xl text-mint-green mb-2">Definisi Belajar Konsep</h4>
+                <p class="text-slate">Proses kognitif untuk memahami sebuah ide dengan mengidentifikasi atribut-atribut utamanya dan membedakannya dari yang lain. Ini adalah inti dari pemahaman mendalam.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-effect p-6 rounded-lg">
+                    <h4 class="font-bold text-xl text-light-slate mb-4">Manfaat Belajar Konsep</h4>
+                    <ul class="list-disc list-inside text-slate space-y-2">
+                        <li>Mengurangi kompleksitas.</li>
+                        <li>Memungkinkan generalisasi.</li>
+                        <li>Memfasilitasi komunikasi efisien.</li>
+                    </ul>
+                </div>
+                <div class="glass-effect p-6 rounded-lg">
+                     <h4 class="font-bold text-xl text-light-slate mb-4">Strategi Desain Pesan</h4>
+                    <ul class="space-y-3 text-slate">
+                        <li><b>Definisi Jelas:</b> <i class="text-xs text-slate/70"> "Demokrasi adalah..."</i></li>
+                        <li><b>Contoh & Non-contoh:</b> <i class="text-xs text-slate/70"> Indonesia (contoh), Korea Utara (non-contoh).</i></li>
+                        <li><b>Analogi & Metafora:</b> <i class="text-xs text-slate/70"> "Anggaran negara itu seperti keuangan rumah tangga."</i></li>
+                        <li><b>Peta Konsep/Diagram:</b> <i class="text-xs text-slate/70"> Diagram cabang pilar-pilar demokrasi.</i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Prinsip Perubahan Perilaku -->
+        <section id="perilaku" class="mb-20">
+             <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">IV.</span> Prinsip Perubahan Perilaku: Tujuan Akhir</h3>
+             <div class="static-glass p-8 rounded-lg mb-10">
+                <h4 class="font-bold text-xl text-mint-green mb-2">Definisi Perubahan Perilaku</h4>
+                <p class="text-slate">Hasil akhir dari pembelajaran efektif, di mana terjadi perubahan yang relatif permanen dalam perilaku sebagai hasil dari pengalaman atau latihan yang diperkuat.</p>
+            </div>
+            
+            <h4 class="font-bold text-xl text-center text-light-slate mb-6">Alur Proses Perubahan Perilaku (Model AIDA)</h4>
+            <div class="flex flex-col md:flex-row items-stretch justify-center text-center space-y-4 md:space-y-0 md:space-x-2">
+                 <div class="flex-1 bg-light-navy p-4 rounded h-24 flex flex-col justify-center"><b>Awareness</b><p class="text-xs text-slate">Sadar akan adanya ide/masalah</p></div>
+                 <div class="self-center flow-arrow transform md:rotate-0 rotate-90 mx-2">→</div>
+                 <div class="flex-1 bg-light-navy p-4 rounded h-24 flex flex-col justify-center"><b>Interest</b><p class="text-xs text-slate">Tertarik mencari tahu</p></div>
+                 <div class="self-center flow-arrow transform md:rotate-0 rotate-90 mx-2">→</div>
+                 <div class="flex-1 bg-light-navy p-4 rounded h-24 flex flex-col justify-center"><b>Desire/Evaluation</b><p class="text-xs text-slate">Menginginkan & mengevaluasi</p></div>
+                 <div class="self-center flow-arrow transform md:rotate-0 rotate-90 mx-2">→</div>
+                 <div class="flex-1 bg-light-navy p-4 rounded h-24 flex flex-col justify-center"><b>Action/Adoption</b><p class="text-xs text-slate">Mencoba & menerapkan</p></div>
+            </div>
+        </section>
+
+        <!-- Studi Kasus -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-3 text-3xl">✍️</span> Latihan: Merancang Desain Pembelajaran</h3>
+            <div class="bg-light-navy border-l-4 border-unesa-yellow p-4 rounded-md mb-8">
+                <p class="text-light-slate font-semibold">Petunjuk Pengerjaan</p>
+                <p class="text-slate text-sm mt-1">Untuk semua tugas di bawah, hasil akhir rancangan (infografis/poster) dibuat dalam format ukuran A4 dan dikumpulkan dalam bentuk file JPEG.</p>
+            </div>
+            <div class="space-y-8">
+                <!-- Kelompok 1 -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-lg text-mint-green mb-2">Tugas 1: Merancang Infografis Anti-Plagiarisme</h4>
+                    <p class="text-slate text-sm mb-4">Anda diminta membuat infografis untuk mahasiswa baru tentang "Apa itu Plagiarisme dan Cara Menghindarinya". Mahasiswa baru seringkali tidak memperhatikan pengumuman panjang.</p>
+                    <hr class="border-lightest-navy my-4">
+                    <p class="text-mint-green text-sm font-semibold mb-2">Pertanyaan Rancangan:</p>
+                    <ul class="list-disc list-inside text-slate text-sm space-y-2">
+                        <li><b>Persepsi:</b> Prinsip persepsi eksternal apa (kontras, ukuran, repetisi) yang akan Anda gunakan agar infografis ini menarik perhatian?</li>
+                        <li><b>Kognisi:</b> Bagaimana Anda menyajikan konsep "plagiarisme" menggunakan contoh dan non-contoh agar mudah dipahami?</li>
+                    </ul>
+                </div>
+                <!-- Kelompok 2 -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-lg text-mint-green mb-2">Tugas 2: Merancang Poster Keamanan Siber</h4>
+                    <p class="text-slate text-sm mb-4">Target Anda adalah staf universitas non-IT. Anda diminta merancang poster A3 yang menarik dan mudah diingat tentang "3 Langkah Waspada Phishing Email". Tujuannya agar staf mengubah perilaku mereka saat menerima email mencurigakan.</p>
+                    <hr class="border-lightest-navy my-4">
+                    <p class="text-mint-green text-sm font-semibold mb-2">Pertanyaan Rancangan:</p>
+                     <ul class="list-disc list-inside text-slate text-sm space-y-2">
+                        <li><b>Memori:</b> Strategi memori apa (chunking, repetisi, visualisasi) yang akan Anda gunakan dalam poster agar 3 langkah itu mudah diingat hanya dengan melihat sekilas?</li>
+                        <li><b>Perubahan Perilaku:</b> Elemen desain atau kalimat ajakan (call-to-action) apa yang akan Anda tambahkan pada poster untuk mendorong tahap "Action/Adoption" (penerapan)?</li>
+                    </ul>
+                </div>
+                <!-- Kelompok 3 -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-lg text-mint-green mb-2">Tugas 3: Mendesain Sesi Orientasi Perpustakaan</h4>
+                    <p class="text-slate text-sm mb-4">Sesi orientasi perpustakaan sering dianggap membosankan. Tujuannya adalah mengubah persepsi mahasiswa dari "perpustakaan itu gudang buku" menjadi "perpustakaan adalah pusat sumber belajar digital dan kolaborasi".</p>
+                    <hr class="border-lightest-navy my-4">
+                    <p class="text-mint-green text-sm font-semibold mb-2">Pertanyaan Rancangan:</p>
+                     <ul class="list-disc list-inside text-slate text-sm space-y-2">
+                        <li><b>Persepsi:</b> Faktor persepsi internal (minat, mood) apa yang perlu Anda pertimbangkan? Bagaimana cara Anda merancang stimulus awal sesi untuk menciptakan persepsi positif?</li>
+                        <li><b>Perubahan Perilaku:</b> Apa satu aktivitas konkret yang bisa Anda lakukan di akhir sesi untuk mengubah perilaku mahasiswa dari pasif menjadi aktif menggunakan fasilitas perpus?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refleksi -->
+         <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-3 text-3xl">✨</span> Refleksi Akhir</h3>
+            <div class="bg-light-navy p-8 rounded-lg text-center">
+                 <p class="text-light-slate mt-4 italic text-lg">Pikirkan kembali satu pengalaman belajar yang paling Anda ingat. Bukan hanya hafal, tapi benar-benar mengubah cara Anda berpikir atau bertindak. Prinsip mana dari empat yang kita bahas hari ini (persepsi, memori, kognisi, atau perubahan perilaku) yang menurut Anda paling berperan dalam pengalaman tersebut? Mengapa?</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-navy mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate">
+            <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">Kembali ke Homepage</a>
+            <p class="mt-4">&copy; 2025 Departemen Teknologi Pendidikan - Fakultas Ilmu Pendidikan</p>
+            <p class="text-sm">Universitas Negeri Surabaya</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
