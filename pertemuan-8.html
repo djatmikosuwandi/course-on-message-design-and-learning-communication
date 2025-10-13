@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 8: Analisis Kebutuhan & Adaptasi Audiens - DPKP | UNESA</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Konfigurasi Tailwind & Style Tambahan -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'unesa-blue': '#003c71',
+                        'unesa-yellow': '#fdb913',
+                        'navy': '#0a192f',
+                        'light-navy': '#112240',
+                        'lightest-navy': '#233554',
+                        'slate': '#8892b0',
+                        'light-slate': '#a8b2d1',
+                        'lightest-slate': '#ccd6f6',
+                        'mint-green': '#64ffda',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #a8b2d1;
+        }
+        .glass-effect {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glass-effect:hover {
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            transform: translateY(-5px);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -15px;
+            width: 300px;
+            height: 1px;
+            margin-left: 24px;
+            background-color: #233554;
+        }
+        .flow-arrow {
+            color: #fdb913;
+            flex-shrink: 0;
+        }
+        .static-glass {
+             background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="static-glass sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/c/c2/State_University_of_Surabaya_logo.png/799px-State_University_of_Surabaya_logo.png" alt="Logo UNESA" class="h-10">
+                <div>
+                    <h1 class="text-xl font-bold text-lightest-slate">DP<span class="text-unesa-yellow">KP</span></h1>
+                    <p class="text-xs text-slate">Universitas Negeri Surabaya</p>
+                </div>
+            </div>
+            <div>
+                <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">← Kembali ke Homepage</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Judul Pertemuan -->
+        <section class="mb-20 text-center">
+            <p class="text-unesa-yellow font-semibold mb-3">Pertemuan 8</p>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-lightest-slate max-w-4xl mx-auto">Menjadi Arsitek Pesan: Analisis Kebutuhan & Adaptasi Audiens</h2>
+        </section>
+
+        <!-- Tujuan Pembelajaran -->
+        <section class="mb-16 static-glass p-8 rounded-lg border-l-4 border-unesa-yellow">
+             <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-4"><span class="text-unesa-yellow mr-3">🎯</span> Tujuan Pembelajaran</h3>
+             <p class="text-light-slate">Setelah mengikuti sesi ini, Anda diharapkan mampu menyusun analisis kebutuhan audiens secara sistematis dan mengadaptasi pesan pembelajaran agar relevan, menarik, dan efektif bagi audiens tersebut.</p>
+             <ul class="list-disc list-inside text-light-slate space-y-2 mt-4">
+                <li>Mengidentifikasi tiga dimensi kunci dalam analisis audiens: demografis, psikografis, dan kontekstual.</li>
+                <li>Memilih metode analisis audiens yang paling sesuai dengan situasi pembelajaran.</li>
+                <li>Merumuskan strategi adaptasi pesan (konten, struktur, bahasa, penyampaian) berdasarkan hasil analisis.</li>
+             </ul>
+        </section>
+
+        <!-- Apersepsi -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-3 text-3xl">🔗</span> Apersepsi</h3>
+            <div class="bg-light-navy p-8 rounded-lg">
+                <p class="text-slate text-lg">Pada pertemuan ke-7, kita telah membongkar "ruang mesin" pikiran audiens, memahami bagaimana persepsi, memori, dan kognisi bekerja.</p>
+                <p class="text-light-slate mt-4 text-lg">Sekarang kita tahu <b class="text-mint-green">bagaimana</b> pikiran mereka bekerja. Pertanyaan selanjutnya adalah, <b class="text-mint-green">siapa</b> mereka sebenarnya? Hari ini, kita akan beralih dari seorang 'psikolog' menjadi seorang 'detektif' audiens. Kita akan belajar cara mengumpulkan petunjuk tentang audiens kita untuk membangun pesan yang tidak hanya 'didengar', tetapi juga 'dirasakan' dan 'diterima'.</p>
+            </div>
+        </section>
+        
+        <!-- Materi Awal -->
+        <section id="materi-awal" class="mb-20 text-center">
+             <h3 class="flex items-center justify-center text-3xl font-bold text-lightest-slate mb-8"><span class="text-unesa-yellow mr-3 text-4xl">I.</span> Materi Awal: Mengapa Audiens Adalah Segalanya?</h3>
+             <div class="static-glass p-8 rounded-lg max-w-3xl mx-auto">
+                 <p class="text-2xl italic text-light-slate mb-4">"Merancang pesan tanpa analisis audiens itu seperti seorang arsitek membangun rumah tanpa tahu siapa yang akan tinggal di dalamnya."</p>
+                 <p class="text-slate">Pesan yang paling brilian sekalipun akan gagal total jika tidak 'nyambung' dengan audiens. Analisis audiens bukanlah langkah tambahan, melainkan <b class="text-mint-green">fondasi</b> dari seluruh proses desain pesan. Ini adalah proses untuk membangun empati—kemampuan untuk melihat dunia dari sudut pandang audiens Anda.</p>
+             </div>
+        </section>
+
+        <!-- Materi Isi -->
+        <section id="materi-isi" class="mb-20">
+            <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">II.</span> Materi Isi: Membedah Audiens Anda</h3>
+            
+            <div class="static-glass p-8 rounded-lg mb-12">
+                <h4 class="font-bold text-xl text-mint-green mb-2">Tiga Dimensi Kunci Analisis Audiens</h4>
+                <p class="text-slate mb-6">Untuk memahami audiens secara menyeluruh, kita perlu melihat dari tiga lensa yang berbeda:</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-light-navy p-6 rounded-lg border-t-2 border-mint-green">
+                        <h5 class="font-bold text-lightest-slate">1. Demografis</h5>
+                        <p class="text-sm text-slate italic mb-2">(Siapa mereka?)</p>
+                        <ul class="text-sm text-slate space-y-1 list-disc list-inside">
+                            <li>Usia</li>
+                            <li>Gender</li>
+                            <li>Tingkat Pendidikan</li>
+                            <li>Latar Belakang Budaya</li>
+                            <li>Pekerjaan/Profesi</li>
+                        </ul>
+                    </div>
+                     <div class="bg-light-navy p-6 rounded-lg border-t-2 border-unesa-yellow">
+                        <h5 class="font-bold text-lightest-slate">2. Psikografis</h5>
+                        <p class="text-sm text-slate italic mb-2">(Bagaimana mereka berpikir & merasa?)</p>
+                        <ul class="text-sm text-slate space-y-1 list-disc list-inside">
+                            <li>Pengetahuan Awal</li>
+                            <li>Sikap & Keyakinan</li>
+                            <li>Nilai-nilai (Values)</li>
+                            <li>Minat & Motivasi</li>
+                            <li>Gaya Belajar</li>
+                        </ul>
+                    </div>
+                     <div class="bg-light-navy p-6 rounded-lg border-t-2 border-slate">
+                        <h5 class="font-bold text-lightest-slate">3. Kontekstual</h5>
+                        <p class="text-sm text-slate italic mb-2">(Bagaimana situasinya?)</p>
+                        <ul class="text-sm text-slate space-y-1 list-disc list-inside">
+                            <li>Ukuran Audiens</li>
+                            <li>Lingkungan Fisik</li>
+                            <li>Ekspektasi Audiens</li>
+                            <li>Waktu & Durasi</li>
+                            <li>Peristiwa Terkini</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+             <div class="glass-effect p-8 rounded-lg mb-12">
+                <h4 class="font-bold text-xl text-mint-green mb-6">Dari Analisis Menuju Adaptasi Pesan</h4>
+                <p class="text-slate mb-6 text-center">Analisis hanyalah data mentah. Keajaiban terjadi saat kita menggunakan data tersebut untuk mengadaptasi pesan kita.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-2 text-center">
+                    <div class="bg-light-navy p-4 rounded w-full md:w-auto"><b>Analisis Audiens</b><p class="text-xs text-slate">(Kumpulkan data)</p></div>
+                    <div class="flow-arrow transform md:rotate-0 rotate-90 mx-2">→</div>
+                    <div class="bg-light-navy p-4 rounded w-full md:w-auto"><b>Insight</b><p class="text-xs text-slate">(Temukan pola & kebutuhan)</p></div>
+                    <div class="flow-arrow transform md:rotate-0 rotate-90 mx-2">→</div>
+                    <div class="bg-light-navy p-4 rounded w-full md:w-auto"><b>Adaptasi Pesan</b><p class="text-xs text-slate">(Sesuaikan strategi)</p></div>
+                    <div class="flow-arrow transform md:rotate-0 rotate-90 mx-2">→</div>
+                    <div class="bg-unesa-yellow text-navy p-4 rounded w-full md:w-auto"><b>Pesan Efektif</b><p class="text-xs text-unesa-blue">(Tujuan tercapai)</p></div>
+                </div>
+            </div>
+            
+            <div class="static-glass p-8 rounded-lg">
+                <h4 class="font-bold text-xl text-mint-green mb-6">Empat Strategi Kunci Adaptasi Pesan</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-light-navy p-6 rounded-lg">
+                        <h5 class="font-bold text-lightest-slate mb-2">1. Adaptasi Konten</h5>
+                        <p class="text-slate text-sm">Memilih contoh, data, analogi, dan cerita yang paling relevan dan mudah dipahami oleh audiens Anda. <br><i class="text-xs text-slate/70">Contoh: Menjelaskan anggaran negara menggunakan analogi "uang jajan" untuk audiens remaja.</i></p>
+                    </div>
+                     <div class="bg-light-navy p-6 rounded-lg">
+                        <h5 class="font-bold text-lightest-slate mb-2">2. Adaptasi Struktur</h5>
+                        <p class="text-slate text-sm">Menyusun alur informasi sesuai tingkat pengetahuan audiens. Apakah mulai dari masalah dulu baru solusi? Atau dari yang mudah ke yang sulit? <br><i class="text-xs text-slate/70">Contoh: Untuk audiens ahli, langsung ke inti masalah. Untuk pemula, mulai dari definisi dasar.</i></p>
+                    </div>
+                     <div class="bg-light-navy p-6 rounded-lg">
+                        <h5 class="font-bold text-lightest-slate mb-2">3. Adaptasi Bahasa</h5>
+                        <p class="text-slate text-sm">Menggunakan tingkat formalitas, istilah teknis, dan gaya bahasa yang sesuai. Hindari jargon yang tidak perlu. <br><i class="text-xs text-slate/70">Contoh: Menggunakan bahasa santai di workshop kreatif, dan bahasa formal di seminar akademik.</i></p>
+                    </div>
+                     <div class="bg-light-navy p-6 rounded-lg">
+                        <h5 class="font-bold text-lightest-slate mb-2">4. Adaptasi Penyampaian</h5>
+                        <p class="text-slate text-sm">Memilih media, alat bantu visual, dan gaya presentasi yang paling efektif. Apakah audiens lebih suka visual, data, atau cerita? <br><i class="text-xs text-slate/70">Contoh: Menggunakan banyak diagram untuk audiens teknik, dan banyak foto/video untuk audiens umum.</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Materi Penutup -->
+        <section id="materi-penutup" class="mb-20">
+            <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">III.</span> Materi Penutup: Kesimpulan</h3>
+            <div class="glass-effect p-8 rounded-lg">
+                <ul class="space-y-4 text-light-slate">
+                    <li class="flex items-start"><span class="text-mint-green mr-3 mt-1">✔</span> <span><b>Audiens-sentris:</b> Pergeseran paradigma dari "apa yang ingin saya katakan" menjadi "apa yang perlu audiens dengar dan bagaimana cara terbaik mereka mendengarnya".</span></li>
+                    <li class="flex items-start"><span class="text-mint-green mr-3 mt-1">✔</span> <span><b>Analisis adalah Fondasi:</b> Tanpa data yang solid tentang audiens, adaptasi hanyalah tebakan yang berisiko.</span></li>
+                    <li class="flex items-start"><span class="text-mint-green mr-3 mt-1">✔</span> <span><b>Adaptasi adalah Aksi:</b> Adaptasi adalah proses menerjemahkan pemahaman kita tentang audiens menjadi pilihan-pilihan strategis dalam desain pesan.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Refleksi -->
+         <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-3 text-3xl">✨</span> Refleksi Akhir</h3>
+            <div class="bg-light-navy p-8 rounded-lg text-center">
+                 <p class="text-light-slate mt-4 italic text-lg">Pikirkan satu momen saat Anda harus menjelaskan sesuatu yang rumit kepada orang dengan latar belakang yang sangat berbeda (misal: menjelaskan pekerjaan Anda kepada nenek, atau menjelaskan hobi Anda kepada anak kecil). Strategi adaptasi apa (konten, struktur, bahasa, penyampaian) yang Anda gunakan secara tidak sadar saat itu? Apakah berhasil?</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-navy mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate">
+            <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">Kembali ke Homepage</a>
+            <p class="mt-4">&copy; 2025 Departemen Teknologi Pendidikan - Fakultas Ilmu Pendidikan</p>
+            <p class="text-sm">Universitas Negeri Surabaya</p>
+        </div>
+    </footer>
+
+</body>
+</html>
