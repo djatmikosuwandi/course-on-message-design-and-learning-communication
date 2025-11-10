@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 11: Desain Pesan Visual - DPKP | UNESA</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Konfigurasi Tailwind & Style Tambahan -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'unesa-blue': '#003c71',
+                        'unesa-yellow': '#fdb913',
+                        'navy': '#0a192f',
+                        'light-navy': '#112240',
+                        'lightest-navy': '#233554',
+                        'slate': '#8892b0',
+                        'light-slate': '#a8b2d1',
+                        'lightest-slate': '#ccd6f6',
+                        'mint-green': '#64ffda',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #a8b2d1;
+        }
+        .glass-effect {
+            background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glass-effect:hover {
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            transform: translateY(-5px);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            position: relative;
+            top: -15px;
+            width: 300px;
+            height: 1px;
+            margin-left: 24px;
+            background-color: #233554;
+        }
+        .static-glass {
+             background: rgba(17, 34, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(35, 53, 84, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="static-glass sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/c/c2/State_University_of_Surabaya_logo.png/799px-State_University_of_Surabaya_logo.png" alt="Logo UNESA" class="h-10">
+                <div>
+                    <h1 class="text-xl font-bold text-lightest-slate">DP<span class="text-unesa-yellow">KP</span></h1>
+                    <p class="text-xs text-slate">Universitas Negeri Surabaya</p>
+                </div>
+            </div>
+            <div>
+                <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">← Kembali ke Homepage</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Judul Pertemuan -->
+        <section class="mb-20 text-center">
+            <p class="text-unesa-yellow font-semibold mb-3">Pertemuan 11</p>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-lightest-slate max-w-4xl mx-auto">Desain Pesan Visual: Membuat Pesan 'Terlihat' dan 'Dipahami'</h2>
+        </section>
+
+        <!-- Tujuan Pembelajaran -->
+        <section class="mb-16 static-glass p-8 rounded-lg border-l-4 border-unesa-yellow">
+             <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-4"><span class="text-unesa-yellow mr-3">🎯</span> Tujuan Pembelajaran</h3>
+             <p class="text-light-slate">Setelah mengikuti sesi ini, Anda diharapkan mampu mengembangkan desain pesan visual dengan menerapkan tiga pilar kualitas visual secara efektif:</p>
+             <ul class="list-disc list-inside text-light-slate space-y-2 mt-4">
+                <li>Menerapkan prinsip-prinsip tipografi untuk meningkatkan keterbacaan (*readability*).</li>
+                <li>Menerapkan prinsip-prinsip layout untuk menciptakan struktur visual yang jelas.</li>
+                <li>Mengevaluasi desain untuk memastikan ketersampaian ide/pesan secara cepat dan tepat.</li>
+             </ul>
+        </section>
+
+        <!-- Apersepsi -->
+        <section class="mb-20">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-3 text-3xl">🔗</span> Apersepsi</h3>
+            <div class="bg-light-navy p-8 rounded-lg">
+                <p class="text-slate text-lg">Dalam beberapa pertemuan terakhir, kita telah menjelajahi berbagai "saluran" pesan. Kita belajar kekuatan <b class="text-mint-green">audio/suara</b> (Pertemuan 9) dan bagaimana menyusun <b class="text-mint-green">teks</b> yang efektif (Pertemuan 10).</p>
+                <p class="text-light-slate mt-4 text-lg">Hari ini, kita akan menggabungkan semua itu dengan elemen yang paling dominan dalam persepsi manusia: <b class="text-mint-green">VISUAL</b>. Kita akan belajar bahwa desain visual bukan sekadar 'mempercantik' tampilan. Desain visual adalah tentang 'memperjelas' pesan, mengurangi beban kognitif, dan memandu perhatian audiens tepat ke tempat yang kita inginkan.</p>
+            </div>
+        </section>
+        
+        <!-- Materi Awal -->
+        <section id="materi-awal" class="mb-20 text-center">
+             <h3 class="flex items-center justify-center text-3xl font-bold text-lightest-slate mb-8"><span class="text-unesa-yellow mr-3 text-4xl">I.</span> Materi Awal: Kenapa Visual Penting?</h3>
+             <div class="static-glass p-8 rounded-lg max-w-3xl mx-auto">
+                 <p class="text-2xl italic text-light-slate mb-4">"Pembelajaran lebih mendalam terjadi ketika materi disajikan dengan kata-kata dan gambar, daripada hanya kata-kata saja."</p>
+                 <p class="text-slate mb-2 font-semibold">- Prinsip Multimedia, Richard E. Mayer (2021)</p>
+                 <p class="text-slate">Otak kita memproses gambar <b class="text-mint-green">60.000 kali lebih cepat</b> daripada teks. Dalam desain pembelajaran, visual adalah jembatan tercepat dari "stimulus" ke "pemahaman". Pesan yang baik harus dirancang untuk "dilihat", bukan hanya "dibaca".</p>
+             </div>
+        </section>
+
+        <!-- Materi Isi -->
+        <section id="materi-isi" class="mb-20">
+            <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">II.</span> Materi Isi: Tiga Pilar Kualitas Desain Visual</h3>
+            
+            <div class="space-y-12">
+                <!-- Pilar 1: Tipografi -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-2xl text-mint-green mb-4">1. Prinsip Tipografi: Seni "Berbicara" dengan Teks</h4>
+                    <p class="text-slate mb-6">Tipografi bukan hanya soal memilih font yang "keren". Ini adalah tentang memastikan teks dapat dibaca dengan mudah dan nyaman, serta menciptakan hierarki informasi.</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Readability (Keterbacaan)</h5>
+                            <p class="text-sm text-slate">Pilih font yang jelas. <b class="text-white">Sans Serif</b> (seperti Inter, Roboto, Arial) umumnya lebih mudah dibaca di layar digital. Gunakan <b class="text-white">Serif</b> (seperti Times New Roman) untuk teks cetak yang panjang.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Hierarchy (Hierarki)</h5>
+                            <p class="text-sm text-slate">Gunakan ukuran, ketebalan (bold), dan warna untuk membedakan Judul, Sub-Judul, dan Isi Teks. Mata audiens harus tahu mana yang paling penting terlebih dahulu.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Contrast (Kontras)</h5>
+                            <p class="text-sm text-slate">Pastikan ada kontras yang cukup antara warna teks dan latar belakang. Hindari teks abu-abu muda di atas latar putih, atau teks biru tua di atas latar hitam.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Space (Ruang)</h5>
+                            <p class="text-sm text-slate">Berikan "ruang napas" pada teks Anda. Atur <b class="text-white">leading</b> (jarak antar baris) agar tidak terlalu rapat, sehingga mata tidak lelah saat berpindah baris.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pilar 2: Layout -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-2xl text-mint-green mb-4">2. Prinsip Layout: Arsitektur Halaman Anda</h4>
+                    <p class="text-slate mb-6">Layout adalah cara Anda menyusun semua elemen (teks, gambar, ikon) di atas "kanvas" (slide, poster, halaman web). Layout yang baik akan memandu mata audiens dengan mulus.</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Proximity (Kedekatan)</h5>
+                            <p class="text-sm text-slate">Letakkan elemen-elemen yang saling terkait secara logis berdekatan. Ini menciptakan unit visual yang logis dan mengurangi kebingungan.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Alignment (Perataan)</h5>
+                            <p class="text-sm text-slate">Jangan letakkan elemen secara acak. Ratakan elemen pada satu garis (kiri, kanan, atau tengah). Ini menciptakan tampilan yang rapi, teratur, dan profesional.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">White Space (Ruang Kosong)</h5>
+                            <p class="text-sm text-slate">Ruang kosong (atau *negative space*) adalah teman Anda. Jangan penuhi slide Anda! Ruang kosong memberikan "ruang napas" antar elemen dan membantu mata menemukan fokus.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Repetition (Konsistensi)</h5>
+                            <p class="text-sm text-slate">Gunakan elemen desain secara konsisten. Misalnya, semua judul harus menggunakan font dan ukuran yang sama. Semua ikon harus memiliki gaya yang sama. Ini menciptakan kesatuan visual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pilar 3: Ketersampaian Pesan -->
+                <div class="glass-effect p-8 rounded-lg">
+                    <h4 class="font-bold text-2xl text-mint-green mb-4">3. Ketersampaian Ide/Pesan: Jantung Desain</h4>
+                    <p class="text-slate mb-6">Ini adalah tujuan akhir. Apakah audiens "paham" maksud Anda dalam 3 detik? Jika desain Anda indah tapi membingungkan, maka desain itu gagal.</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Clarity > Beauty (Kejelasan > Keindahan)</h5>
+                            <p class="text-sm text-slate">Selalu utamakan kejelasan pesan di atas estetika yang rumit. Desain yang baik adalah desain yang tidak terlihat, ia hanya membantu pesan tersampaikan.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Focus (Titik Vokal)</h5>
+                            <p class="text-sm text-slate">Setiap desain harus punya satu "pahlawan". Apa satu hal terpenting yang harus dilihat audiens? Buatlah elemen itu menonjol menggunakan ukuran, warna, atau posisi.</p>
+                        </div>
+                         <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Signaling (Pemberian Sinyal)</h5>
+                            <p class="text-sm text-slate">Sesuai prinsip Mayer, bantu audiens! Gunakan petunjuk visual seperti panah, *highlight*, penebalan, atau lingkaran untuk memandu perhatian mereka ke informasi kunci.</p>
+                        </div>
+                        <div class="bg-light-navy p-6 rounded-lg">
+                            <h5 class="font-bold text-lightest-slate mb-2">Reduce Clutter (Kurangi 'Sampah' Visual)</h5>
+                            <p class="text-sm text-slate">Buang semua elemen yang tidak perlu. Setiap elemen dalam desain Anda harus punya tujuan. Jika tidak, hapus. Ini akan mengurangi beban kognitif audiens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Materi Penutup -->
+        <section id="materi-penutup" class="mb-20">
+            <h3 class="flex items-center text-3xl font-bold text-lightest-slate mb-8 section-title"><span class="text-unesa-yellow mr-3 text-4xl">III.</span> Materi Penutup: Desainer sebagai Pemandu</h3>
+            <div class="static-glass p-8 rounded-lg">
+                <p class="text-light-slate mb-6">Sebagai desainer pesan pembelajaran, tugas kita bukanlah menjadi seniman. Tugas kita adalah menjadi pemandu. Kita memandu mata dan pikiran audiens melalui informasi yang kompleks.</p>
+                <ul class="space-y-4 text-light-slate">
+                    <li class="flex items-start">
+                        <span class="text-mint-green mr-3 mt-1">✔</span>
+                        <span><b>Tipografi</b> adalah <b class="text-white">suara</b> kita. Apakah jelas? Apakah tegas?</span>
+                    </li>
+                     <li class="flex items-start">
+                        <span class="text-mint-green mr-3 mt-1">✔</span>
+                         <span><b>Layout</b> adalah <b class="text-white">peta</b> kita. Apakah mudah dinavigasi?</span>
+                    </li>
+                     <li class="flex items-start">
+                        <span class="text-mint-green mr-3 mt-1">✔</span>
+                         <span><b>Ketersampaian Pesan</b> adalah <b class="text-white">tujuan</b> kita. Apakah audiens sampai ke tujuan dengan selamat?</span>
+                    </li>
+                </ul>
+                <p class="text-slate mt-6 italic">Referensi Utama: Mayer, R. E. (2021). Multimedia Learning (3rd ed.). Cambridge University Press.</p>
+            </div>
+        </section>
+
+        <!-- Refleksi -->
+         <section class="mb-12">
+            <h3 class="flex items-center text-2xl font-bold text-lightest-slate mb-6 section-title"><span class="text-unesa-yellow mr-3 text-3xl">✨</span> Refleksi Akhir</h3>
+            <div class="bg-light-navy p-8 rounded-lg text-center">
+                 <p class="text-light-slate mt-4 italic text-lg">Pikirkan satu poster, slide presentasi, atau halaman web yang menurut Anda memiliki desain yang 'buruk' atau 'membingungkan'. Prinsip spesifik apa (dari Tipografi, Layout, atau Ketersampaian Pesan) yang paling mereka abaikan? Apa satu perubahan kecil yang akan Anda lakukan untuk memperbaikinya?</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-navy mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate">
+            <a href="desain-komunikasi-pembelajaran.html" class="text-unesa-yellow hover:underline text-sm font-medium">Kembali ke Homepage</a>
+            <p class="mt-4">&copy; 2025 Departemen Teknologi Pendidikan - Fakultas Ilmu Pendidikan</p>
+            <p class="text-sm">Universitas Negeri Surabaya</p>
+        </div>
+    </footer>
+
+</body>
+</html>
